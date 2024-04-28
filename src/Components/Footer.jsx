@@ -6,10 +6,10 @@ const Footer = () => {
                     <p className="text-sm ">@2024 Soumik Poddar <span className="text-zinc-950 text-sm ms-6">All rights reserved</span></p>
                 </div>
                 <div className="space-x-4">
-                    <a href="/about" className="hover:underline  text-sm font-semibold">About</a>
-                    <a href="/privacy " className="hover:underline text-sm font-semibold">Privacy policy</a>
-                    <a href="/license" className="hover:underline text-sm font-semibold">Licensing</a>
-                    <a href="/contact" className="hover:underline text-sm font-semibold">Contact</a>
+                    <a href="/about" className="hover:underline  text-sm">About</a>
+                    <a href="/privacy " className="hover:underline text-sm">Privacy policy</a>
+                    <a href="/license" className="hover:underline text-sm">Licensing</a>
+                    <a href="/contact" className="hover:underline text-sm">Contact</a>
                 </div>
             </div>
         </>
