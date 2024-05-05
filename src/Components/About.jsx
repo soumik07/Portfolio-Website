@@ -10,9 +10,9 @@ const About = () => {
     })
     return(
         <>
-            <div className="main-container py-16  mx-4">
+            <div id='aboutMe' className="main-container py-16  mx-4">
                 <h1 className="text-4xl font-bold text-center pb-16">About Me</h1>
-                <div className='main flex h-96 shadow-2xl' style={{backgroundImage: `url(${bannerFlip})`,backgroundSize: 'cover'}}>
+                <div className='main flex h-96 shadow-2xls' style={{backgroundImage: `url(${bannerFlip})`,backgroundSize: 'cover'}}>
                     <div className='p-6 flex justify-center utems-center w-full '>
                         <img className='rounded-full shadow-lg' src={data.image}></img>
                     </div>

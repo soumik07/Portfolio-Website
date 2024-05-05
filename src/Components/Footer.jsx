@@ -6,10 +6,10 @@ const Footer = () => {
                     <p className="text-sm ">@2024 Soumik Poddar <span className="text-zinc-950 text-sm ms-6">All rights reserved</span></p>
                 </div>
                 <div className="space-x-4">
-                    <a href="/about" className="hover:underline  text-sm">About</a>
-                    <a href="/privacy " className="hover:underline text-sm">Privacy policy</a>
-                    <a href="/license" className="hover:underline text-sm">Licensing</a>
-                    <a href="/contact" className="hover:underline text-sm">Contact</a>
+                    <a href="#aboutMe" className="hover:underline  text-sm cursor-pointer">About</a>
+                    <a href="/privacy " className="hover:underline text-sm cursor-pointer">Privacy policy</a>
+                    <a href="/license" className="hover:underline text-sm cursor-pointer">Licensing</a>
+                    <a onClick={()=>{swal("Contact Details", `Phone No: +918617839176 \n Email ID: sp9091814841@gmail.com`);}} className="hover:underline text-sm cursor-pointer">Contact</a>
                 </div>
             </div>
         </>

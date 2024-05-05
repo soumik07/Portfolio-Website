@@ -1,10 +1,12 @@
 import { useState } from "react";
+// import {cv} from "./my_CV.pdf";
+
 
 const Header = () => {
     const[brandName, setBrandName] = useState("Soumik Poddar");
     const[actionButton] = useState({
         title: "Download CV",
-        link: "/download-cv"
+        
     });
     
 
@@ -45,19 +47,16 @@ const Header = () => {
                 </div>
                 <div className="space-x-6">
                     {/*links*/ }
-                    {menuLinks.map(link=>(
-                        <a key={link.id} href={link.link} className="hover:text-orange-500">{link.title}</a>
-                    ))}
+                    
 
-                    {/* <a href="/home" className="hover:text-orange-500">Home</a>
-                    <a href="/about" className="hover:text-orange-500">About</a>
-                    <a href="/portfolio" className="hover:text-orange-500">   Portfolio</a>
-                    <a href="/skills" className="hover:text-orange-500">Skills</a>
-                    <a href="/contact" className="hover:text-orange-500">Contact</a> */}
+                    <a href="#aboutMe" className="hover:text-orange-500">About Me</a>
+                    <a href="#projects" className="hover:text-orange-500">Projects</a>
+                    <a href="#skills" className="hover:text-orange-500"> My Skills</a>
+                    
                 </div>
                 <div>
                     {/*Button*/ }
-                    <a href={actionButton.link} className='bg-orange-600 px-2 py-2 text-white rounded-lg shadow-lg'>{actionButton.title}</a>
+                    <a  download="my_CV"  className='bg-orange-600 px-2 py-2 text-white rounded-lg shadow-lg'>{actionButton.title}</a>
                 </div>
             </div>
         </>
