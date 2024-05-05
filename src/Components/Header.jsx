@@ -51,12 +51,12 @@ const Header = () => {
 
                     <a href="#aboutMe" className="hover:text-orange-500">About Me</a>
                     <a href="#projects" className="hover:text-orange-500">Projects</a>
-                    <a href="#skills" className="hover:text-orange-500"> My Skills</a>
+                    <a onClick={()=>{document.getElementById("skills").scrollIntoView()}} className="hover:text-orange-500 cursor-pointer"> My Skills</a>
                     
                 </div>
                 <div>
                     {/*Button*/ }
-                    <a  download="my_CV"  className='bg-orange-600 px-2 py-2 text-white rounded-lg shadow-lg'>{actionButton.title}</a>
+                    <a  download="my_CV"  className='bg-orange-600 px-2 py-2 text-white rounded-lg shadow-lg cursor-pointer'>{actionButton.title}</a>
                 </div>
             </div>
         </>
